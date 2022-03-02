@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
+    'articles',
 
     # 3rd Party
     'crispy_forms',
@@ -112,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 

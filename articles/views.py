@@ -5,12 +5,12 @@ from django.urls import reverse_lazy
 from .models import Article
 
 
-class ArticleListView(LoginRequiredMixin, ListView):
+class ArticleListView(ListView):  # removed LoginRequiredMixin
     model = Article
     template_name = 'article_list.html'
 
 
-class ArticleDetailView(LoginRequiredMixin, DetailView):
+class ArticleDetailView(DetailView):
     model = Article
     template_name = 'article_detail.html'
 
